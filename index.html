@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="name">
+      <a class="link " href="">Tope Adenekan</a>
+    </div>
+    <button class="btn">Show Name</button>
+  
+
+  </div>
+  
+
+  <script>
+    const button = document.querySelector('.btn');
+    const name = document.querySelector('.link');
+
+    button.addEventListener('click', () => {
+      name.classList.toggle('add-name');
+   
+      if(name.classList.contains('add-name')){
+        button.textContent = 'Remove Name';
+      }else button.textContent = 'Show Name'
+    })
+
+  </script>
+</body>
+</html>
